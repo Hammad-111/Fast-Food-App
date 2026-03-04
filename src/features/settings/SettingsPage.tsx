@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Badge } from '@/components/ui/badge';
+import logo from '@/assets/images/logo.png';
 
 export const SettingsPage = () => {
     const [activeTab, setActiveTab] = useState('About');
@@ -225,7 +226,7 @@ export const SettingsPage = () => {
                                 <div className="space-y-8">
                                     <div className="flex items-center gap-6">
                                         <div className="h-32 w-32 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center p-2 shadow-2xl shadow-primary/20 overflow-hidden">
-                                            <img src="/logo.png" alt="Fast Foodies Logo" className="w-full h-full object-contain rounded-lg drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
+                                            <img src={logo} alt="Fast Foodies Logo" className="w-full h-full object-contain rounded-lg drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
                                         </div>
                                         <div>
                                             <h3 className="text-3xl font-black text-white italic tracking-tighter">FAST FOODIES POS</h3>

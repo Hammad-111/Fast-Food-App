@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Background } from '@/components/ui/Background';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '@/assets/images/logo.png';
 
 export const MainLayout = () => {
     const logout = useAuthStore((state) => state.logout);
@@ -24,7 +25,7 @@ export const MainLayout = () => {
             {/* Sidebar */}
             <aside className="w-64 bg-glass border-r border-white/10 hidden md:flex flex-col z-50">
                 <div className="p-6 border-b border-white/5 backdrop-blur-md flex flex-col items-center justify-center text-center">
-                    <img src="/logo.png" alt="Fast Foodies Logo" className="w-24 h-24 object-contain rounded-lg p-1 bg-white/5 mb-3 border border-white/5 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
+                    <img src={logo} alt="Fast Foodies Logo" className="w-24 h-24 object-contain rounded-lg p-1 bg-white/5 mb-3 border border-white/5 drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]" />
                     <h1 className="text-2xl font-black bg-gradient-to-r from-primary via-blue-400 to-purple-500 bg-clip-text text-transparent text-glow uppercase tracking-tight">
                         Fast Foodies
                     </h1>

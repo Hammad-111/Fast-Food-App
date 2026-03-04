@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Lock, User } from 'lucide-react';
 import { motion } from 'framer-motion';
+import logo from '@/assets/images/logo.png';
 
 export const LoginScreen = () => {
     const [username, setUsername] = useState('');
@@ -36,7 +37,7 @@ export const LoginScreen = () => {
             >
                 <div className="bg-white/10 backdrop-blur-xl border border-white/20 p-8 rounded-2xl shadow-2xl">
                     <div className="text-center mb-8 flex flex-col items-center">
-                        <img src="/logo.png" alt="Fast Foodies Logo" className="w-28 h-28 object-contain rounded-lg p-1 bg-white/5 shadow-[0_0_30px_rgba(255,255,255,0.15)] mb-4 border border-white/10" />
+                        <img src={logo} alt="Fast Foodies Logo" className="w-28 h-28 object-contain rounded-lg p-1 bg-white/5 shadow-[0_0_30px_rgba(255,255,255,0.15)] mb-4 border border-white/10" />
                         <h1 className="text-4xl font-black text-white mb-2 uppercase tracking-tight">Fast Foodies</h1>
                         <p className="text-white/60 font-bold tracking-widest uppercase text-sm">Premium POS System</p>
                     </div>
