@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuthStore } from '@/store/authStore';
 import { LoginScreen } from '@/features/auth/LoginScreen';
 import { MainLayout } from '@/layouts/MainLayout';
@@ -11,7 +11,7 @@ function App() {
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/login" element={!isAuthenticated ? <LoginScreen /> : <Navigate to="/" />} />
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="settings" element={<SettingsPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

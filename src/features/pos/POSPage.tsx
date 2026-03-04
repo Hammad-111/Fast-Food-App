@@ -17,7 +17,7 @@ export const POSPage = () => {
             </div>
 
             {/* Right Side: Cart */}
-            <div className="w-full md:w-[400px] h-[40vh] md:h-full bg-background md:rounded-xl md:border md:border-border overflow-hidden shadow-xl z-20">
+            <div className="w-full md:w-[320px] lg:w-[380px] xl:w-[420px] flex-shrink-0 h-[40vh] md:h-full bg-background md:rounded-xl md:border md:border-border overflow-hidden shadow-xl z-20">
                 <Cart />
             </div>
         </div>

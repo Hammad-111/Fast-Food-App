@@ -87,7 +87,7 @@ export const MainLayout = () => {
 
             {/* Main Content */}
             <main className="flex-1 flex flex-col h-full overflow-hidden relative z-10">
-                <div className="flex-1 overflow-auto p-4 md:p-8">
+                <div className="flex-1 overflow-auto p-2 md:p-4 lg:p-6">
                     <AnimatePresence mode="wait">
                         <motion.div
                             initial={{ opacity: 0, y: 10 }}

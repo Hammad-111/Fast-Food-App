@@ -11,8 +11,8 @@ function createWindow() {
         height: 800,
         minWidth: 1024,
         minHeight: 640,
-        icon: path.join(__dirname, '../public/logo.png'),
-        title: 'Fast Foodies Pizza POS',
+        icon: path.join(__dirname, '../public/logo.ico'),
+        title: 'Fast Foodies Pizza',
         backgroundColor: '#0f0f12',
         webPreferences: {
             nodeIntegration: false,

@@ -22,7 +22,8 @@
     "files": [
       "dist/**/*",
       "electron/**/*",
-      "public/logo.png"
+      "public/logo.png",
+      "public/logo.ico"
     ],
     "win": {
       "target": [
@@ -33,7 +34,7 @@
           ]
         }
       ],
-      "icon": "public/logo.png"
+      "icon": "public/logo.ico"
     },
     "nsis": {
       "oneClick": false,
